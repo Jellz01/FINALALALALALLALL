@@ -1,52 +1,32 @@
 package org.example.Models;
 
-import jakarta.persistence.*;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Column;
 
 @Entity
-@Table(name = "Usuarios")
-public class Usuarios
-{
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+public class Usuarios {
 
-    @Column(name="cedula")
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY) // Use Identity for auto-increment
+    private Long id;
+
+    @Column(nullable = false, unique = true)
     private String cedula;
 
-
-    @Column(name = "consumo")
     private String consumo;
-//asdasd
-    @Column (name="deudas")
-    private String  deudas;
-
-
-    @Column(name="nombre")
+    private String deudas;
     private String nombre;
 
-    public long getId()
-    {
+    // Getters and setters
+    public Long getId() {
         return id;
     }
-    public void setId (long id)
-    {
+
+    public void setId(Long id) {
         this.id = id;
-
-    }
-    public String getNombre() {
-        return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
-    public String getConsumo() {
-        return consumo;
-    }
-
-    public void setConsumo(String consumo) {
-        this.consumo = consumo;
     }
 
     public String getCedula() {
@@ -57,11 +37,38 @@ public class Usuarios
         this.cedula = cedula;
     }
 
+    public String getConsumo() {
+        return consumo;
+    }
+
+    public void setConsumo(String consumo) {
+        this.consumo = consumo;
+    }
+
     public String getDeudas() {
         return deudas;
     }
 
     public void setDeudas(String deudas) {
         this.deudas = deudas;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    @Override
+    public String toString() {
+        return "Usuarios{" +
+                "id=" + id +
+                ", cedula='" + cedula + '\'' +
+                ", consumo='" + consumo + '\'' +
+                ", deudas='" + deudas + '\'' +
+                ", nombre='" + nombre + '\'' +
+                '}';
     }
 }

@@ -20,6 +20,11 @@
     </properties>
 
     <dependencies>
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>42.2.23</version>  <!-- Use the appropriate version -->
+        </dependency>
         <!-- Jakarta EE Web Profile -->
         <dependency>
             <groupId>jakarta.platform</groupId>
