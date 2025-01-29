@@ -15,7 +15,7 @@ public class gestionBinomios {
 
 
     public List<Binomios> getUsuarios() {
-        return BinomioDao.
+        return binomioDao.getAllBinomios();
     }
 
 }
