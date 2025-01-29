@@ -1,4 +1,4 @@
 package org.example.Services;
 
-public class RegistroPrService {
+public class BinomiosService {
 }
