@@ -13,7 +13,7 @@ import java.util.List;
 
 @Path("/Usuario")
 public class UsuarioService {
-
+//asdasd
     @Inject
     private Gestion gestion;
 

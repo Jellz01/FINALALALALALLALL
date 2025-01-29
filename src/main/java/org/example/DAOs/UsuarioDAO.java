@@ -6,7 +6,7 @@ import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
 
 import java.util.List;
-
+//asdasdasd
 @ApplicationScoped
 public class UsuarioDAO {
     @PersistenceContext(unitName = "org.examplePersistenceUnit")

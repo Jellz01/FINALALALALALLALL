@@ -11,7 +11,7 @@ import jakarta.ws.rs.core.Response;
 import org.example.Services.UsuarioService;
 
 import java.util.List;
-
+//asdasd
 @ApplicationScoped
 public class Gestion {
 

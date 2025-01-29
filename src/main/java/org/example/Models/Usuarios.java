@@ -16,7 +16,7 @@ public class Usuarios
 
     @Column(name = "consumo")
     private String consumo;
-
+//asdasd
     @Column (name="deudas")
     private String  deudas;
 
