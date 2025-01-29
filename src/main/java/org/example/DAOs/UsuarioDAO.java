@@ -15,7 +15,9 @@ public class UsuarioDAO {
     public Usuarios getUsuarioByCedula(String cedula) {
         return em.find(Usuarios.class, cedula);
     }
-    public List<Usuarios> getAllUsuarios() {
+   public List<Usuarios> getAllUsuarios() {
         return em.createQuery( "SELECT * FROM Usuarios ", Usuarios.class ).getResultList();
     }
+
+
 }
